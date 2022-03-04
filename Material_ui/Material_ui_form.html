@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+  <style>
+      .mui-container {
+          width: 600px;
+          background: mintcream;
+      }
+      
+      #image {
+          width: 100px;
+          height: 100px;
+          margin-left: 230px;
+      }
+      legend {
+          margin-left: 190px;
+      }
+      body {
+        background-image: url('waterdrop.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .mui-form input::placeholder {
+    color:black;
+}
+  </style>
+    </head>
+    <body>
+        <section >
+            <div class="mui-container">
+                <form class="mui-form" id="frm">
+                        <img id="image" src="react-logo.png"><br>
+                    <legend>Appointment Form</legend> 
+                    <div class="mui-textfield">
+                      <input type="text" placeholder="firstName">
+                    </div>
+                    <div class="mui-textfield">
+                      <input type="text" placeholder="lastName">
+                    </div>
+        
+                    <div class="mui-radio">
+                        <label>
+                          <input type="radio"
+                                 name="optionsRadios"
+                                 id="optionsRadios1"
+                                 value="option1"
+                                 checked>
+                          Male
+                        </label>
+                      </div>
+                      <div class="mui-radio">
+                        <label>
+                          <input type="radio"
+                                 name="optionsRadios"
+                                 id="optionsRadios2"
+                                 value="option2">
+                          Female
+                        </label>
+                      </div>
+                      <div class="mui-radio">
+                        <label>
+                          <input type="radio"
+                                 name="optionsRadios"
+                                 id="optionsRadios3"
+                                 value="option3"
+                                 disabled>
+                          Option three is disabled
+                        </label>
+                      </div>
+        
+                    <div class="mui-textfield">
+                      <input type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="mui-textfield">
+                        <input type="date" placeholder="Date of birth">
+                      </div>
+                      <div class="mui-textfield">
+                        
+                        <div class="mui-select">
+                            <select>
+                              <option>B.E./ B.TECH.</option>
+                              <option>Bsc.</option>
+                              <option>B.C.A.</option>
+                              <option>M.C.A.</option>
+                            </select>
+                            <label>Qualification</label>
+                          </div>
+    
+                          <div class="mui-select">
+                            <select>
+                              <option>React js</option>
+                              <option>Angular</option>
+                              <option>Node js</option>
+                              <option>Python</option>
+                            </select>
+                            <label>Select Course</label>
+                          </div>
+    
+                          <div class="mui-select">
+                            <select>
+                              <option>10 to 12 pm</option>
+                              <option>12 to 2 pm</option>
+                              <option>2 to 4 pm</option>
+                              <option>4 to 6 pm</option>
+                            </select>
+                            <label>Select Time</label>
+                          </div>
+                      </div>
+                      <div class="mui-textfield">
+                        <input type="tel" placeholder="Enter your Number">
+                      </div>
+                      <div>
+                        <button class="mui-btn mui-btn--primary">Request An Appointment</button>
+                     </div>
+                     <div>
+                        <button class="mui-btn mui-btn--primary">Logout</button>
+                     </div>
+                  </form>
+            </div>
+        </section>
+    </body>
+</html>
